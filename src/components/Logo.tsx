@@ -1,0 +1,26 @@
+/**
+ * Ícono de marca: cara de pug (orejas caídas, arrugas de frente, hocico) con
+ * la cola como espiral, con doble lectura: cola enroscada de pug u ovillo de hilo.
+ * Verificado visualmente (renderizado a PNG) antes de integrarlo, a tamaño
+ * grande y a ~32px, para confirmar que se lee bien en ambos casos.
+ */
+export default function Logo({ className = "h-8 w-8" }: { className?: string }) {
+  return (
+    <svg viewBox="0 -4.5 100 100" fill="none" className={className} aria-hidden="true">
+      <g stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="38" cy="42" r="22" />
+        <path d="M19 31C9 33, 7 46, 17 56C21 58, 24 54, 21 48C18 42, 17 37, 19 31Z" />
+        <path d="M57 31C67 33, 69 46, 59 56C55 58, 52 54, 55 48C58 42, 59 37, 57 31Z" />
+        <ellipse cx="38" cy="52" rx="12.5" ry="9.5" />
+        <path d="M27 26Q38 22, 49 26" />
+        <path d="M29 31Q38 28, 47 31" />
+        <path d="M64 64C68 70, 78 71, 83 64C88 57, 83 48, 75 49C69 50, 66 56, 71 59C74.5 61, 78 59.5, 78 56" />
+      </g>
+      <g fill="currentColor">
+        <circle cx="29" cy="38" r="2.3" />
+        <circle cx="47" cy="38" r="2.3" />
+        <ellipse cx="38" cy="50" rx="2.8" ry="2.1" />
+      </g>
+    </svg>
+  );
+}
